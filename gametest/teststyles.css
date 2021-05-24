@@ -1,0 +1,177 @@
+html{
+    background: rgb(249,227,151);
+    background: linear-gradient(90deg, rgba(249,227,151,1) 0%, rgba(253,187,45,1) 78%);
+    background-repeat: no-repeat;
+}
+.header{
+    max-width: 100%;
+    height: 50px;
+    color: white;
+    background-color: rgb(2, 2, 32);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+.head1{
+    display: flex;
+    align-items: center;
+}
+.name{
+  color: white;
+  font-size: 25px;
+  padding-left: 10px;
+}
+#cactus{
+    height: 40px;
+    width: auto;
+}
+.head2{
+    display: flex;
+    align-items: center;
+}
+.result{
+    color: white;
+    padding-left: 30px;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 20px;
+}
+#number{
+    padding-right: 20px;
+    color: rgb(253, 211, 72);
+}
+.footer{
+    max-width: 100%;
+    height: 50px;
+    color: white;
+    background-color: rgb(2, 2, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+      element {
+        --kenguTopcss:null;
+          }
+        .game{
+            border: solid 1px;
+            height: 500px;
+            width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #kengu{
+            width: auto;
+            height: 200px;
+            position: relative;
+            top: 310px;
+            left: 20px;
+        }
+        #cactus1{
+            width: auto;
+            height: 80px;
+            position: relative;
+            top: 308px;
+            left: 570px; 
+        }
+        #cactus2{
+            width: auto;
+            height: 100px;
+            position: relative;
+            top: 302px;
+            left: 490px; 
+        }
+        #cactus3{
+            width: auto;
+            height: 160px;
+            position: relative;
+            top: 313px;
+            left: 390px; 
+        }
+        #cactus4{
+            width: auto;
+            height: 150px;
+            position: relative;
+            top: 302px;
+            left: 260px; 
+        }
+        .cactusMov1{
+            animation: cactusMov1 3s infinite linear;
+        }
+        .cactusMov2{
+            animation: cactusMov2 3s infinite linear;
+        }
+        .cactusMov3{
+            animation: cactusMov3 3s infinite linear;
+        }
+        .cactusMov4{
+            animation: cactusMov4 3s infinite linear;
+        }
+      /* ========== */
+      @keyframes cactusMov1
+      {
+          0%{
+              left: 570px;  
+          }
+         100%
+          {
+              left: -270px;
+          }
+      } 
+      @keyframes cactusMov2
+      {
+          0%{
+              left: 490px;  
+          }
+         100%
+          {
+              left: -340px;
+          }
+      } 
+      @keyframes cactusMov3
+      {
+          0%{
+              left: 390px;  
+          }
+         100%
+          {
+              left: -440px;
+          }
+      } 
+      @keyframes cactusMov4
+      {
+          0%{
+              left: 260px;  
+          }
+         100%
+          {
+              left: -560px;
+          }
+      } 
+      /* ======== */
+         .jump_up
+        {
+            animation: jump_up 0.5s linear forwards ;
+        }
+        .jump_down
+        {
+            animation: jump_down 1s linear;
+        }
+        @keyframes jump_up
+        {
+            from {
+                top: 300px
+            }
+            to {
+                top: 100px;
+            }
+        }
+        @keyframes jump_down{
+            from {
+              top:var(--kenguTopcss);
+            }
+            to {
+                top: 300px;
+            }
+        }
+    
